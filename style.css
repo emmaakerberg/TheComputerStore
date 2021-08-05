@@ -2,14 +2,17 @@
     margin: 0;
     padding:0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*background-color: #04466e;*/
-    
 }
 
+body { background-color: #b3ada7; }
 
-body {
-    background-color: #b3ada7;
-}
+h1, h2 { text-align: center; }
+
+h1 { margin: 10px; }
+
+h2 { margin-bottom: 10px; }
+
+h3 { margin-top: 5px; margin-left:20px; }
 
 #topSection {
     display: flex;
@@ -26,33 +29,19 @@ body {
     height: 300px;
 }
 
-.box:first-child {
-    border-right: 1px solid #c5c0b9;
+.bankBox, .workBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.box:last-child {
-    border-left: 1px solid #c5c0b9;
-}
+.bankBox { height: 90px; }
 
-h1, h2 {
-    text-align: center;
-    
-}
+.workBox { height: 215px; }
 
-h1 {
-    margin: 10px;
-}
+.box:first-child { border-right: 1px solid #c5c0b9; }
 
-h2 {
-    margin-bottom: 10px;
-    
-    
-}
-
-h3 {
-    margin-top: 5px;
-    margin-left:20px;
-}
+.box:last-child { border-left: 1px solid #c5c0b9; }
 
 button {
     border: none;
@@ -62,14 +51,20 @@ button {
     background-color: #c2e29b;
 }
 
-#bankButton, #workButton, #payLoanButton, #buyButton {
-    width: 90px;
+button:hover {
+    background-color: #a6da67;
+    border: 1px solid #c2e29b;
 }
 
-#loanButton  {
-    margin-top: 55px;
-    width: 110px;
+#buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+#bankButton, #workButton, #payLoanButton, #buyButton { width: 90px; }
+
+#loanButton  { margin-top: 55px; width: 110px; }
 
 #computerPresentation {
     background-color: #ffffff;
@@ -79,15 +74,13 @@ button {
     margin: auto;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 
 #computerPic {
     width: 170px;
     margin: 20px 0px 20px 60px;
     object-fit: cover;
-
 }
 
 #middleBox{
@@ -102,23 +95,7 @@ button {
     text-align: center;
 }
 
-.bankBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 90px;
-}
-
-.workBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 215px;
-}
-
-select {
-    width: 270px;
-}
+select { width: 270px; }
 
 ul {
     list-style-type: circle;
@@ -126,29 +103,14 @@ ul {
     text-align:left;
 }
 
-li {
+li { padding-top: 5px; }
 
-    padding-top: 5px;
+#computerTitle { margin-top:30px; }
 
-
-}
-
-#buttonRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+.priceElem { margin-right:20px; }
 
 #price {
     font-size: 30px;
-    margin-top:30px;
-}
-
-.priceElem {
-    margin-right:20px;
-}
-
-#computerTitle {
     margin-top:30px;
 }
 
