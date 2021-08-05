@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background-color: #04466e;*/
+    
+}
+
+
+body {
+    background-color: #b3ada7;
+}
+
+#topSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align:center;
+    border-collapse: collapse;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 15px 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.box:first-child {
+    border-right: 1px solid #c5c0b9;
+}
+
+.box:last-child {
+    border-left: 1px solid #c5c0b9;
+}
+
+h1, h2 {
+    text-align: center;
+    
+}
+
+h1 {
+    margin: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    
+    
+}
+
+h3 {
+    margin-top: 5px;
+    margin-left:20px;
+}
+
+button {
+    border: none;
+    height:25px;
+    border-radius: 12.5px;
+    margin: 20px 5px;
+    background-color: #c2e29b;
+}
+
+#bankButton, #workButton, #payLoanButton, #buyButton {
+    width: 90px;
+}
+
+#loanButton  {
+    margin-top: 55px;
+    width: 110px;
+}
+
+#computerPresentation {
+    background-color: #ffffff;
+    border-top: 1px solid #c5c0b9;
+    width: 992px;
+    height: 210px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#computerPic {
+    width: 170px;
+    margin: 20px 0px 20px 60px;
+    object-fit: cover;
+
+}
+
+#middleBox{
+    width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+
+#rightBox {
+    margin-top:20px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.bankBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.workBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 215px;
+}
+
+select {
+    width: 270px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 10px;
+    text-align:left;
+}
+
+li {
+
+    padding-top: 5px;
+
+
+}
+
+#buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#price {
+    font-size: 30px;
+    margin-top:30px;
+}
+
+.priceElem {
+    margin-right:20px;
+}
+
+#computerTitle {
+    margin-top:30px;
+}
+
+#buyButton {
+    height:35px;
+    width: 150px;
+    border-radius: 17.5px;
+    font-size: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>THE KOMPUTER SHOP</h1>
+    </header>
+    <div id="topSection">
+        <div id="bankDiv" class="box">
+            <h2>B A N K</h2>
+
+            <div class="bankBox">
+                <h3>Balance:</h3>
+                <p id="totalBalance" class="priceElem"></p>
+            </div>
+            <div class="bankBox">
+                <h3 id="outstandingLoanHeader">Outstanding Loan: </h3>
+                <p id="outstandingLoanValue" class="priceElem"></p>
+            </div>
+
+            <button id="loanButton">GET LOAN</button>
+        </div>
+
+        <div id="workDiv" class="box">
+            <h2>W O R K</h2>
+            
+            <div class="workBox">
+                <h3>Pay:</h3>
+                <p id="totalPay" class="priceElem"></p>
+            </div>
+            <div id="buttonRow">
+                <button id="bankButton">BANK</button>
+                <button id="payLoanButton">Pay Loan</button>
+                <button id="workButton">WORK</button>     
+            </div>
+            
+        </div>
+
+        <div class="box">
+            <h2>L A P T O P S</h2>
+            <select id="selectComputer">
+                <option value="" selected disabled hidden>Choose laptop</option>
+            </select>
+            <h3>Features:</h3>
+            <ul id="descriptionListElem">
+            </ul>
+        </div>
+    </div>
+
+    <div id="computerPresentation">
+        <img id="computerPic" onerror="defaultImg()">
+        <div id="middleBox">
+            <h2 id="computerTitle"></h2>
+            <p id="computerDescription"></p>
+        </div>
+        <div id="rightBox">
+            <p id="price"></p>
+            <button id="buyButton">BUY</button>
+        </div>
+        
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
